@@ -137,7 +137,7 @@ contract SecretNote is Ownable {
 
         if (userToMove == userAddr) {
             delete(registerUsers[userAddr]);
-            userIndex.length = 0;
+            userIndex.length--;
             return true;
         }
 
